@@ -1,0 +1,165 @@
+/* =====================
+   ESTILO GERAL
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+/* =====================
+   CABEÇALHO
+===================== */
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 10px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f9ca24;
+}
+
+/* =====================
+   SEÇÕES
+===================== */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0a3d62;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section p,
+.section ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.section.alt {
+    background: #e8f0fe;
+}
+
+/* =====================
+   GRID DE CAMPEONATOS
+===================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid article {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   CARDS DE JOGADORES
+===================== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   RODAPÉ
+===================== */
+footer {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =====================
+   RESPONSIVIDADE
+===================== */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .card {
+        width: 90%;
+    }
+}
